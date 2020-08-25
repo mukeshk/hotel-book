@@ -1,0 +1,24 @@
+import { ComponentFixture, TestBed, async } from '@angular/core/testing'
+
+import { FoodAndBeverageComponent } from './food-and-beverage.component'
+
+describe('FoodBeverageComponent', () => {
+  let component: FoodAndBeverageComponent
+  let fixture: ComponentFixture<FoodAndBeverageComponent>
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [FoodAndBeverageComponent],
+    }).compileComponents()
+  }))
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(FoodAndBeverageComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
+
+  it('should create', () => {
+    expect(component).toBeTruthy()
+  })
+})
